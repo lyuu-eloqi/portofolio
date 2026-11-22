@@ -143,19 +143,21 @@
                   <path d="M5 10h10m-4-4 4 4-4 4" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
               </a>
-              <button type="button" class="btn btn-secondary btn-preview-cv" aria-haspopup="dialog">
-                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
-                  <circle cx="12" cy="12" r="3"/>
-                </svg>
-                <span>Pratinjau CV</span>
-              </button>
-              <a href="assets/documents/cv_resmi.pdf" class="btn btn-secondary" download="CV_Abdul_Majid.pdf" title="Unduh berkas CV secara langsung">
-                <svg class="btn-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
-                  <path d="M3 13v3a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-3M7 9l3 3m0 0 3-3m-3 3V3" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-                <span>Unduh CV</span>
-              </a>
+              <div class="hero-cta-secondary-group">
+                <button type="button" class="btn btn-secondary btn-preview-cv" aria-haspopup="dialog">
+                  <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                    <circle cx="12" cy="12" r="3"/>
+                  </svg>
+                  <span>Pratinjau CV</span>
+                </button>
+                <a href="assets/documents/cv_resmi.pdf" class="btn btn-secondary" download="CV_Abdul_Majid.pdf" title="Unduh berkas CV secara langsung">
+                  <svg class="btn-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                    <path d="M3 13v3a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-3M7 9l3 3m0 0 3-3m-3 3V3" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <span>Unduh CV</span>
+                </a>
+              </div>
             </div>
 
             <!-- Quick Meta Strip -->
@@ -729,7 +731,7 @@
               <p class="contact-cta-desc">
                 Tinjau dokumen riwayat hidup langsung pada layar Anda sebelum mengunduh atau simpan langsung berkas resmi PDF.
               </p>
-              <div style="display: flex; flex-wrap: wrap; gap: var(--space-2);">
+              <div class="contact-cta-buttons">
                 <button type="button" class="btn btn-primary btn-sm btn-preview-cv" aria-haspopup="dialog">
                   <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                     <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
@@ -749,25 +751,25 @@
           </div>
 
           <!-- Quick Email Action Card -->
-          <div class="contact-info-card" style="justify-content: center; align-items: center; text-align: center;">
-            <div style="max-width: 440px;">
-              <div class="contact-method-icon" style="margin: 0 auto var(--space-4); width: 56px; height: 56px;" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width: 28px; height: 28px;">
+          <div class="contact-info-card contact-message-card">
+            <div class="contact-message-wrap">
+              <div class="contact-message-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
                 </svg>
               </div>
-              <h3 class="contact-info-title" style="margin-bottom: var(--space-2);">Kirim Pesan Langsung</h3>
-              <p class="contact-info-desc" style="margin-bottom: var(--space-6);">
+              <h3 class="contact-info-title">Kirim Pesan Langsung</h3>
+              <p class="contact-info-desc">
                 Anda dapat memulai percakapan atau mengirimkan penawaran kerja sama secara langsung melalui aplikasi email bawaan perangkat Anda.
               </p>
-              <a href="mailto:abdulmajidt20b@gmail.com?subject=Tawaran%20Kerja%20/%20Diskusi%20Portofolio%20-%20Abdul%20Majid%20Tanjung" class="btn btn-primary" style="width: 100%; margin-bottom: var(--space-3);">
+              <a href="mailto:abdulmajidt20b@gmail.com?subject=Tawaran%20Kerja%20/%20Diskusi%20Portofolio%20-%20Abdul%20Majid%20Tanjung" class="btn btn-primary btn-send-email">
                 <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                   <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
                   <polyline points="22,6 12,13 2,6"/>
                 </svg>
                 <span>Kirim Email ke Abdul Majid Tanjung</span>
               </a>
-              <span style="font-size: 11px; color: var(--color-text-muted);">Format subjek terisi otomatis untuk kenyamanan Anda.</span>
+              <span class="contact-message-hint">Format subjek terisi otomatis untuk kenyamanan Anda.</span>
             </div>
           </div>
 

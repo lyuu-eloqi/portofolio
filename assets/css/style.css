@@ -582,9 +582,16 @@ ul, ol {
 .hero-cta {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   gap: var(--space-3);
   margin-bottom: var(--space-8);
   width: 100%;
+}
+
+.hero-cta-secondary-group {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
 }
 
 .hero-badges-strip {
@@ -1244,6 +1251,54 @@ a.contact-method-value:hover {
   line-height: 1.6;
 }
 
+.contact-cta-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.contact-message-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.contact-message-wrap {
+  max-width: 440px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.contact-message-icon {
+  margin: 0 auto var(--space-4);
+  width: 56px;
+  height: 56px;
+  border-radius: var(--radius-sm);
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-accent);
+}
+
+.contact-message-icon svg {
+  width: 28px;
+  height: 28px;
+}
+
+.btn-send-email {
+  width: 100%;
+  margin-bottom: var(--space-3);
+}
+
+.contact-message-hint {
+  font-size: 11px;
+  color: var(--color-text-muted);
+  display: block;
+}
+
 /* --------------------------------------------------------------------------
    12. Site Footer
    -------------------------------------------------------------------------- */
@@ -1608,33 +1663,582 @@ a.contact-method-value:hover {
   }
 }
 
-/* Small Smartphone Optimization (max-width: 430px) */
-@media (max-width: 430px) {
+/* --------------------------------------------------------------------------
+   Mobile Device System (max-width: 767px)
+   Rapi, Tertata, & Simetris
+   -------------------------------------------------------------------------- */
+@media (max-width: 767px) {
+  /* Layout & Rhythm */
   .container {
     padding-left: var(--space-4);
     padding-right: var(--space-4);
   }
 
-  .hero-cta .btn {
+  .section {
+    padding-top: var(--space-12);
+    padding-bottom: var(--space-12);
+  }
+
+  .section-header {
+    margin-bottom: var(--space-8);
+  }
+
+  .section-kicker {
+    font-size: 11px;
+    margin-bottom: 6px;
+  }
+
+  .section-title {
+    font-size: clamp(1.4rem, 5.5vw, 1.75rem);
+    line-height: 1.3;
+    margin-bottom: 8px;
+  }
+
+  .section-desc {
+    font-size: var(--font-size-sm);
+    line-height: 1.6;
+  }
+
+  /* Header & Navigation */
+  .site-header {
+    height: 64px;
+  }
+
+  .site-brand {
+    font-size: 1rem;
+    gap: 6px;
+    white-space: nowrap;
+  }
+
+  .brand-dot {
+    width: 7px;
+    height: 7px;
+  }
+
+  .header-actions {
+    gap: 8px;
+  }
+
+  .header-actions .btn-preview-cv {
+    padding: 0.4rem 0.75rem;
+    font-size: 11.5px;
+    gap: 5px;
+  }
+
+  .nav-toggle {
+    width: 38px;
+    height: 38px;
+  }
+
+  .mobile-nav-drawer {
+    width: min(300px, 82vw);
+    padding: var(--space-5);
+  }
+
+  .mobile-nav-link {
+    padding: 10px 14px;
+    font-size: 0.9375rem;
+  }
+
+  /* Hero Section Symmetry */
+  .hero-section {
+    padding-top: var(--space-8);
+    padding-bottom: var(--space-12);
+  }
+
+  .hero-grid {
+    gap: var(--space-8);
+  }
+
+  .hero-status {
+    margin-bottom: var(--space-3);
     width: 100%;
   }
 
-  .timeline-item {
-    padding-left: 36px;
+  .hero-status .badge {
+    font-size: 11.5px;
+    padding: 5px 12px;
+    line-height: 1.4;
+    white-space: normal;
+    text-align: left;
+    max-width: 100%;
   }
 
-  .timeline-marker {
-    left: 8px;
+  .hero-name {
+    font-size: clamp(1.85rem, 7.5vw, 2.35rem);
+    line-height: 1.2;
+    margin-bottom: 6px;
+  }
+
+  .hero-role {
+    font-size: 0.9375rem;
+    margin-bottom: 8px;
+  }
+
+  .hero-location {
+    font-size: 12.5px;
+    margin-bottom: var(--space-4);
+  }
+
+  .hero-desc {
+    font-size: 0.9rem;
+    line-height: 1.65;
+    margin-bottom: var(--space-6);
+  }
+
+  /* Perfectly Balanced Hero CTA */
+  .hero-cta {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    margin-bottom: var(--space-6);
+  }
+
+  .hero-cta > .btn-primary {
+    width: 100%;
+    padding: 0.75rem 1.25rem;
+    font-size: 0.9375rem;
+    justify-content: center;
+  }
+
+  .hero-cta-secondary-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    width: 100%;
+  }
+
+  .hero-cta-secondary-group .btn {
+    width: 100%;
+    padding: 0.65rem 0.5rem;
+    font-size: 12px;
+    justify-content: center;
+  }
+
+  /* Symmetrical Hero Badges Strip */
+  .hero-badges-strip {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    width: 100%;
+    padding-top: var(--space-5);
+  }
+
+  .hero-badge-item {
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    padding: 8px 10px;
+    font-size: 11.5px;
+    justify-content: flex-start;
+  }
+
+  /* Hero Visual & Profile Card */
+  .hero-visual {
+    width: 100%;
+  }
+
+  .profile-card {
+    max-width: 320px;
+    margin: 0 auto;
+    width: 100%;
+    padding: var(--space-4);
+    border-radius: var(--radius-lg);
+  }
+
+  .profile-meta-title {
+    font-size: 0.9375rem;
+    text-align: center;
+  }
+
+  .profile-meta-subtitle {
+    font-size: 11.5px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .profile-meta-tags {
+    justify-content: center;
+  }
+
+  /* About Highlights 2x2 Symmetrical Grid */
+  .about-text-content {
+    gap: var(--space-3);
+  }
+
+  .about-paragraph {
+    font-size: 0.9rem;
+    line-height: 1.7;
+  }
+
+  .about-highlights-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: var(--space-3);
+  }
+
+  .highlight-card {
+    padding: 12px 14px;
+    border-radius: var(--radius-md);
+  }
+
+  .highlight-label {
+    font-size: 10.5px;
+    margin-bottom: 2px;
+  }
+
+  .highlight-value {
+    font-size: 0.9375rem;
+  }
+
+  .highlight-sub {
+    font-size: 11px;
+  }
+
+  /* Skills Grid Symmetry */
+  .skills-grid {
+    gap: 14px;
+  }
+
+  .skill-category-card {
+    padding: var(--space-4);
+    border-radius: var(--radius-md);
+  }
+
+  .skill-category-header {
+    margin-bottom: 12px;
+    padding-bottom: 10px;
+    gap: 10px;
+  }
+
+  .skill-category-icon {
+    width: 32px;
+    height: 32px;
+  }
+
+  .skill-category-icon svg {
     width: 16px;
     height: 16px;
   }
 
+  .skill-category-title {
+    font-size: 0.9375rem;
+  }
+
+  .skill-chips-group {
+    gap: 6px;
+  }
+
+  .skill-chip {
+    padding: 5px 10px;
+    font-size: 11.5px;
+    border-radius: var(--radius-xs);
+  }
+
+  /* Experience Timeline Symmetry */
+  .timeline {
+    padding-left: 0;
+    gap: var(--space-6);
+  }
+
   .timeline::before {
-    left: 15px;
+    left: 10px;
+    width: 2px;
+  }
+
+  .timeline-item {
+    padding-left: 28px;
+  }
+
+  .timeline-marker {
+    left: 3px;
+    top: 5px;
+    width: 16px;
+    height: 16px;
+    border-width: 2.5px;
+  }
+
+  .timeline-card {
+    padding: var(--space-4);
+    border-radius: var(--radius-md);
+  }
+
+  .timeline-header {
+    margin-bottom: 12px;
+    padding-bottom: 10px;
+    gap: 6px;
+  }
+
+  .timeline-role {
+    font-size: 1rem;
+    line-height: 1.35;
+  }
+
+  .timeline-company-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+  .timeline-company {
+    font-size: 13px;
+  }
+
+  .timeline-period {
+    font-size: 11.5px;
+  }
+
+  .timeline-list {
+    gap: 8px;
+    margin-bottom: 12px;
+  }
+
+  .timeline-point {
+    padding-left: 16px;
+    font-size: 12.5px;
+    line-height: 1.6;
+  }
+
+  .timeline-disclosure {
+    padding: 10px 12px;
+    font-size: 11.5px;
+    border-radius: var(--radius-sm);
+  }
+
+  /* Projects Showcase Symmetry */
+  .projects-stack {
+    gap: var(--space-6);
+  }
+
+  .project-card {
+    border-radius: var(--radius-lg);
+  }
+
+  .project-preview {
+    padding: 12px;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .project-content {
+    padding: var(--space-4);
+  }
+
+  .project-title {
+    font-size: 1.1rem;
+    line-height: 1.35;
+    margin-bottom: 8px;
+  }
+
+  .project-desc {
+    font-size: 12.5px;
+    line-height: 1.65;
+    margin-bottom: 12px;
+  }
+
+  .project-feature-list {
+    gap: 6px;
+    margin-bottom: 12px;
+  }
+
+  .project-feature-item {
+    padding-left: 16px;
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+  .project-notice-box {
+    padding: 10px 12px;
+    margin-bottom: 14px;
+    border-radius: var(--radius-sm);
+  }
+
+  .project-notice-title {
+    font-size: 10.5px;
+  }
+
+  .project-notice-text {
+    font-size: 11.5px;
+  }
+
+  .project-tech-stack {
+    gap: 5px;
+    margin-bottom: 14px;
+    padding-top: 10px;
+  }
+
+  .tech-tag {
+    font-size: 10.5px;
+    padding: 2px 7px;
+  }
+
+  .project-actions {
+    display: flex;
+    gap: 8px;
+    width: 100%;
   }
 
   .project-actions .btn {
+    flex: 1 1 0;
+    min-width: 0;
+    padding: 0.6rem 0.5rem;
+    font-size: 12px;
+    justify-content: center;
+  }
+
+  /* Contact Section Symmetry */
+  .contact-grid {
+    gap: var(--space-5);
+  }
+
+  .contact-info-card {
+    padding: var(--space-5);
+    border-radius: var(--radius-lg);
+  }
+
+  .contact-info-header {
+    margin-bottom: var(--space-4);
+  }
+
+  .contact-info-title {
+    font-size: 1.125rem;
+  }
+
+  .contact-info-desc {
+    font-size: 12.5px;
+    line-height: 1.6;
+  }
+
+  .contact-methods-list {
+    gap: 12px;
+    margin-bottom: var(--space-5);
+  }
+
+  .contact-method-item {
+    gap: 10px;
+    align-items: center;
+  }
+
+  .contact-method-icon {
+    width: 34px;
+    height: 34px;
+  }
+
+  .contact-method-icon svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .contact-method-label {
+    font-size: 11px;
+  }
+
+  .contact-method-value {
+    font-size: 13px;
+    word-break: break-all;
+  }
+
+  .contact-cta-card {
+    padding: var(--space-4);
+    border-radius: var(--radius-md);
+  }
+
+  .contact-cta-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
     width: 100%;
+  }
+
+  .contact-cta-buttons .btn {
+    width: 100%;
+    padding: 0.55rem 0.5rem;
+    font-size: 12px;
+    justify-content: center;
+  }
+
+  /* Direct Message Card in Contact */
+  .contact-message-card {
+    text-align: center;
+    padding: var(--space-5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact-message-icon {
+    margin: 0 auto 12px;
+    width: 48px;
+    height: 48px;
+    border-radius: var(--radius-md);
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-accent);
+  }
+
+  .contact-message-icon svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .btn-send-email {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    font-size: 0.875rem;
+    justify-content: center;
+    margin-bottom: 8px;
+  }
+
+  .contact-message-hint {
+    font-size: 11px;
+    color: var(--color-text-muted);
+    display: block;
+  }
+
+  /* Footer Symmetry */
+  .footer-container {
+    gap: var(--space-3);
+    text-align: center;
+  }
+
+  .footer-copy p {
+    font-size: 11.5px;
+    line-height: 1.55;
+  }
+
+  .back-to-top-btn {
+    padding: 5px 12px;
+    font-size: 11.5px;
+  }
+}
+
+/* Narrow Smartphones (max-width: 400px) */
+@media (max-width: 400px) {
+  .hero-badges-strip {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .about-highlights-grid {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .hero-cta-secondary-group {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-cta-buttons {
+    grid-template-columns: 1fr;
+  }
+
+  .project-actions {
+    flex-direction: column;
   }
 }
 
