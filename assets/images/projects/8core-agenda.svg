@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F7F8FA"/>
+      <stop offset="100%" stop-color="#EEF2F6"/>
+    </linearGradient>
+    <filter id="cardShadow2" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#202938" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="640" height="400" rx="16" fill="url(#bgGrad2)"/>
+  <rect x="1" y="1" width="638" height="398" rx="15" fill="none" stroke="#E5E9EF" stroke-width="2"/>
+
+  <!-- Desktop App Window Wrapper -->
+  <g transform="translate(30, 24)">
+    <!-- Window Frame -->
+    <rect width="580" height="352" rx="12" fill="#FFFFFF" filter="url(#cardShadow2)" stroke="#E5E9EF" stroke-width="1.2"/>
+    
+    <!-- Title Bar -->
+    <rect width="580" height="36" rx="12" fill="#202938"/>
+    <rect y="24" width="580" height="12" fill="#202938"/>
+    <line x1="0" y1="36" x2="580" y2="36" stroke="#334155" stroke-width="1"/>
+
+    <!-- App Title -->
+    <rect x="14" y="9" width="16" height="16" rx="4" fill="#526B82"/>
+    <text x="36" y="21" font-family="'Poppins', sans-serif" font-size="10" font-weight="600" fill="#FFFFFF">8Core-Agenda v1.2 — Sistem Pengarsipan Surat (RS Thomsen Nias)</text>
+
+    <!-- Window Controls (Minimize, Maximize, Close) -->
+    <circle cx="530" cy="18" r="4" fill="#64748B"/>
+    <circle cx="546" cy="18" r="4" fill="#64748B"/>
+    <circle cx="562" cy="18" r="4" fill="#EF4444"/>
+
+    <!-- Desktop Menu Bar -->
+    <rect y="36" width="580" height="26" fill="#EEF2F6"/>
+    <line x1="0" y1="62" x2="580" y2="62" stroke="#E5E9EF" stroke-width="1"/>
+    <text x="16" y="53" font-family="'Poppins', sans-serif" font-size="9" fill="#202938" font-weight="500">File</text>
+    <text x="44" y="53" font-family="'Poppins', sans-serif" font-size="9" fill="#202938" font-weight="500">Agenda Surat</text>
+    <text x="122" y="53" font-family="'Poppins', sans-serif" font-size="9" fill="#202938" font-weight="500">Disposisi</text>
+    <text x="180" y="53" font-family="'Poppins', sans-serif" font-size="9" fill="#202938" font-weight="500">Cetak Laporan</text>
+    <text x="264" y="53" font-family="'Poppins', sans-serif" font-size="9" fill="#202938" font-weight="500">Buku Panduan</text>
+
+    <!-- Toolbar / Action Bar -->
+    <g transform="translate(16, 72)">
+      <!-- New Entry Button -->
+      <rect width="110" height="26" rx="5" fill="#526B82"/>
+      <text x="55" y="17" font-family="'Poppins', sans-serif" font-size="9" font-weight="600" fill="#FFFFFF" text-anchor="middle">+ Registrasi Surat</text>
+
+      <!-- Filter Dropdown -->
+      <rect x="118" y="0" width="100" height="26" rx="5" fill="#F8FAFC" stroke="#E5E9EF" stroke-width="1"/>
+      <text x="128" y="17" font-family="'Poppins', sans-serif" font-size="8.5" fill="#687386">Kategori: Semua</text>
+
+      <!-- Search Input -->
+      <rect x="360" y="0" width="188" height="26" rx="5" fill="#F8FAFC" stroke="#E5E9EF" stroke-width="1"/>
+      <text x="372" y="17" font-family="'Poppins', sans-serif" font-size="8.5" fill="#94A3B8">Cari nomor agenda / perihal...</text>
+    </g>
+
+    <!-- Data Table View -->
+    <g transform="translate(16, 110)">
+      <!-- Table Header -->
+      <rect width="548" height="28" fill="#EEF2F6" rx="6"/>
+      <text x="12" y="18" font-family="'Poppins', sans-serif" font-size="8.5" font-weight="600" fill="#202938">No. Agenda</text>
+      <text x="80" y="18" font-family="'Poppins', sans-serif" font-size="8.5" font-weight="600" fill="#202938">Tgl Terima</text>
+      <text x="150" y="18" font-family="'Poppins', sans-serif" font-size="8.5" font-weight="600" fill="#202938">Nomor &amp; Asal Surat</text>
+      <text x="320" y="18" font-family="'Poppins', sans-serif" font-size="8.5" font-weight="600" fill="#202938">Perihal</text>
+      <text x="470" y="18" font-family="'Poppins', sans-serif" font-size="8.5" font-weight="600" fill="#202938">Status</text>
+
+      <!-- Row 1 -->
+      <g transform="translate(0, 32)">
+        <rect width="548" height="34" fill="#FFFFFF" stroke="#F1F5F9" stroke-width="1"/>
+        <text x="12" y="21" font-family="'Poppins', sans-serif" font-size="8.5" font-weight="600" fill="#526B82">AGD/2025/084</text>
+        <text x="80" y="21" font-family="'Poppins', sans-serif" font-size="8.5" fill="#687386">12 Mei 2025</text>
+        <text x="150" y="16" font-family="'Poppins', sans-serif" font-size="8.5" font-weight="500" fill="#202938">440/128/Dinkes-Nias</text>
+        <text x="150" y="28" font-family="'Poppins', sans-serif" font-size="7.5" fill="#94A3B8">Dinas Kesehatan Prov. Sumut</text>
+        <text x="320" y="21" font-family="'Poppins', sans-serif" font-size="8.5" fill="#202938">Verifikasi Layanan Rujukan BPJS</text>
+        <rect x="470" y="9" width="66" height="18" rx="4" fill="#EEF2F6"/>
+        <text x="503" y="21" font-family="'Poppins', sans-serif" font-size="7.5" font-weight="600" fill="#526B82" text-anchor="middle">Disposisi</text>
+      </g>
+
+      <!-- Row 2 -->
+      <g transform="translate(0, 70)">
+        <rect width="548" height="34" fill="#F8FAFC" stroke="#F1F5F9" stroke-width="1"/>
+        <text x="12" y="21" font-family="'Poppins', sans-serif" font-size="8.5" font-weight="600" fill="#526B82">AGD/2025/085</text>
+        <text x="80" y="21" font-family="'Poppins', sans-serif" font-size="8.5" fill="#687386">14 Mei 2025</text>
+        <text x="150" y="16" font-family="'Poppins', sans-serif" font-size="8.5" font-weight="500" fill="#202938">800/042/RS-THOM/2025</text>
+        <text x="150" y="28" font-family="'Poppins', sans-serif" font-size="7.5" fill="#94A3B8">Bagian Tata Usaha RS</text>
+        <text x="320" y="21" font-family="'Poppins', sans-serif" font-size="8.5" fill="#202938">Jadwal Rotasi Shift Medis SIMRS</text>
+        <rect x="470" y="9" width="66" height="18" rx="4" fill="#ECFDF5"/>
+        <text x="503" y="21" font-family="'Poppins', sans-serif" font-size="7.5" font-weight="600" fill="#059669" text-anchor="middle">Selesai</text>
+      </g>
+
+      <!-- Row 3 -->
+      <g transform="translate(0, 108)">
+        <rect width="548" height="34" fill="#FFFFFF" stroke="#F1F5F9" stroke-width="1"/>
+        <text x="12" y="21" font-family="'Poppins', sans-serif" font-size="8.5" font-weight="600" fill="#526B82">AGD/2025/086</text>
+        <text x="80" y="21" font-family="'Poppins', sans-serif" font-size="8.5" fill="#687386">16 Mei 2025</text>
+        <text x="150" y="16" font-family="'Poppins', sans-serif" font-size="8.5" font-weight="500" fill="#202938">021/LOG/MED/V/2025</text>
+        <text x="150" y="28" font-family="'Poppins', sans-serif" font-size="7.5" fill="#94A3B8">Vendor Farmasi Kimia</text>
+        <text x="320" y="21" font-family="'Poppins', sans-serif" font-size="8.5" fill="#202938">Pengiriman Logistik Alkes Q2</text>
+        <rect x="470" y="9" width="66" height="18" rx="4" fill="#EEF2F6"/>
+        <text x="503" y="21" font-family="'Poppins', sans-serif" font-size="7.5" font-weight="600" fill="#526B82" text-anchor="middle">Disposisi</text>
+      </g>
+
+      <!-- System Documentation Tag Footer -->
+      <g transform="translate(0, 160)">
+        <rect width="548" height="52" rx="6" fill="#F8FAFC" stroke="#E5E9EF" stroke-width="1"/>
+        <text x="14" y="22" font-family="'Poppins', sans-serif" font-size="9" font-weight="600" fill="#202938">Kelengkapan Proyek Magang:</text>
+        <text x="14" y="38" font-family="'Poppins', sans-serif" font-size="8.5" fill="#687386">• Dokumentasi Spesifikasi Sistem Lengkap  |  • Buku Panduan Pengguna (User Manual) Terstruktur</text>
+        <rect x="424" y="12" width="110" height="26" rx="4" fill="#526B82"/>
+        <text x="479" y="28" font-family="'Poppins', sans-serif" font-size="8.5" font-weight="600" fill="#FFFFFF" text-anchor="middle">Java Desktop / Swing</text>
+      </g>
+    </g>
+  </g>
+</svg>

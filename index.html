@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abdul Majid Tanjung, S.Kom. — Information Technology Graduate | Web Developer</title>
+
+  <!-- SEO & Metadata -->
+  <meta name="description" content="Personal portfolio Abdul Majid Tanjung, S.Kom., lulusan S1 Teknologi Informasi Universitas Nias. Menampilkan keahlian web development, pengalaman magang di RS Thomsen Nias, dan proyek perangkat lunak.">
+  <meta name="author" content="Abdul Majid Tanjung">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#F7F8FA">
+
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Lyuu Eloqi, S.Kom. — Information Technology Graduate | Web Developer">
+  <meta property="og:description" content="Personal portfolio Lyuu Eloqi, S.Kom., lulusan S1 Teknologi Informasi Universitas Nias (IPK 3.69/4.00). Spesialisasi web development dan sistem informasi.">
+  <meta property="og:image" content="assets/images/profile/lyuu-eloqi-avatar.svg">
+
+  <!-- Google Font: Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Aksesibilitas: Tautan Lompat ke Konten Utama -->
+  <a href="#main-content" class="skip-link">Lompat ke konten utama</a>
+
+  <!-- ======================================================================
+       HEADER & NAVIGATION
+       ====================================================================== -->
+  <header class="site-header" role="banner">
+    <div class="container header-container">
+      <a href="#home" class="site-brand" aria-label="Lyuu Eloqi - Beranda">
+        <span class="brand-dot" aria-hidden="true"></span>
+        <span>Lyuu Eloqi</span>
+      </a>
+
+      <!-- Navigasi Desktop -->
+      <nav class="nav-desktop" aria-label="Navigasi Utama">
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Aksi Header & Menu Mobile Toggle -->
+      <div class="header-actions">
+        <button type="button" class="btn btn-secondary btn-sm btn-preview-cv" aria-haspopup="dialog" aria-label="Buka pratinjau berkas CV Lyuu Eloqi">
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+            <circle cx="12" cy="12" r="3"/>
+          </svg>
+          <span>Pratinjau CV</span>
+        </button>
+
+        <!-- Hamburger Button untuk Smartphone & Tablet -->
+        <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="mobile-nav" aria-label="Buka navigasi menu">
+          <span class="hamburger-line" aria-hidden="true"></span>
+          <span class="hamburger-line" aria-hidden="true"></span>
+          <span class="hamburger-line" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer & Backdrop Overlay -->
+  <div class="mobile-nav-backdrop" aria-hidden="true"></div>
+  <aside id="mobile-nav" class="mobile-nav-drawer" aria-label="Navigasi Seluler" aria-hidden="true">
+    <nav class="mobile-nav-links">
+      <a href="#home" class="mobile-nav-link active">Home</a>
+      <a href="#about" class="mobile-nav-link">About</a>
+      <a href="#skills" class="mobile-nav-link">Skills</a>
+      <a href="#experience" class="mobile-nav-link">Experience</a>
+      <a href="#projects" class="mobile-nav-link">Projects</a>
+      <a href="#contact" class="mobile-nav-link">Contact</a>
+    </nav>
+    <div class="mobile-nav-footer">
+      <button type="button" class="btn btn-secondary btn-preview-cv" style="width: 100%; margin-bottom: 8px;">
+        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+          <circle cx="12" cy="12" r="3"/>
+        </svg>
+        <span>Pratinjau CV</span>
+      </button>
+      <a href="assets/documents/cv_resmi.pdf" class="btn btn-primary" style="width: 100%;" download="CV_Lyuu_Eloqi.pdf">
+        <svg class="btn-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+          <path d="M3 13v3a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-3M7 9l3 3m0 0 3-3m-3 3V3" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span>Unduh Langsung (PDF)</span>
+      </a>
+    </div>
+  </aside>
+
+  <!-- ======================================================================
+       MAIN CONTENT CONTAINER
+       ====================================================================== -->
+  <main id="main-content">
+
+    <!-- --------------------------------------------------------------------
+         1. HERO SECTION
+         -------------------------------------------------------------------- -->
+    <section id="home" class="hero-section" aria-label="Perkenalan">
+      <div class="container">
+        <div class="hero-grid">
+          
+          <!-- Teks Utama Hero -->
+          <div class="hero-content">
+            <div class="hero-status">
+              <span class="badge badge-success">
+                <span class="status-dot" aria-hidden="true"></span>
+                Tersedia untuk Peluang Kerja Penuh Waktu / Kontrak
+              </span>
+            </div>
+
+            <h1 class="hero-name">Abdul Majid Tanjung, S.Kom.</h1>
+            <p class="hero-role">Information Technology Graduate | Web Developer</p>
+            
+            <div class="hero-location">
+              <svg class="location-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="12" cy="9" r="2.5"/>
+              </svg>
+              <span>Gunungsitoli, Sumatera Utara, Indonesia</span>
+            </div>
+
+            <p class="hero-desc">
+              Lulusan S1 Teknologi Informasi dari Universitas Nias dengan fokus pada rekayasa perangkat lunak dan sistem informasi. Berpengalaman membangun aplikasi web berbasis Laravel dan PHP, perancangan database relasional, serta kolaborasi pengembangan sistem dan dokumentasi teknis.
+            </p>
+
+            <div class="hero-cta">
+              <a href="#projects" class="btn btn-primary">
+                <span>Lihat Proyek</span>
+                <svg class="btn-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M5 10h10m-4-4 4 4-4 4" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+              <button type="button" class="btn btn-secondary btn-preview-cv" aria-haspopup="dialog">
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                  <circle cx="12" cy="12" r="3"/>
+                </svg>
+                <span>Pratinjau CV</span>
+              </button>
+              <a href="assets/documents/cv_resmi.pdf" class="btn btn-secondary" download="CV_Lyuu_Eloqi.pdf" title="Unduh berkas CV secara langsung">
+                <svg class="btn-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                  <path d="M3 13v3a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-3M7 9l3 3m0 0 3-3m-3 3V3" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Unduh CV</span>
+              </a>
+            </div>
+
+            <!-- Quick Meta Strip -->
+            <div class="hero-badges-strip">
+              <div class="hero-badge-item">
+                <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                  <path d="M10 2 2 6l8 4 8-4-8-4Z" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="m2 14 8 4 8-4M2 10l8 4 8-4" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>S1 Teknologi Informasi (IPK 3.69)</span>
+              </div>
+              <div class="hero-badge-item">
+                <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                  <rect x="3" y="4" width="14" height="12" rx="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M8 8h4M8 12h4" stroke-linecap="round"/>
+                </svg>
+                <span>Laravel &amp; Full-Stack Web</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Visual Profile Card -->
+          <div class="hero-visual">
+            <div class="profile-card">
+              <div class="profile-image-wrap">
+                <img src="assets/images/profile/lyuu-eloqi-avatar.svg" alt="Ilustrasi identitas profesional Lyuu Eloqi, S.Kom." class="profile-image" width="340" height="340" loading="eager">
+              </div>
+              <div class="profile-meta">
+                <div class="profile-meta-title">Abdul Majid Tanjung, S.Kom.</div>
+                <div class="profile-meta-subtitle">Universitas Nias — Angkatan 2022–2026</div>
+                <div class="profile-meta-tags">
+                  <span class="profile-tag">Web Development</span>
+                  <span class="profile-tag">Database MySQL</span>
+                  <span class="profile-tag">System Documentation</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- --------------------------------------------------------------------
+         2. ABOUT SECTION
+         -------------------------------------------------------------------- -->
+    <section id="about" class="section about-section" aria-label="Tentang Saya">
+      <div class="container">
+        
+        <header class="section-header">
+          <div class="section-kicker">Tentang Saya</div>
+          <h2 class="section-title">Latar Belakang Pendidikan &amp; Minat Teknis</h2>
+          <p class="section-desc">Mengenal profil akademis, pendekatan rekayasa perangkat lunak, dan dedikasi pada pengembangan sistem informasi.</p>
+        </header>
+
+        <div class="about-grid">
+          <div class="about-text-content">
+            <p class="about-paragraph">
+              Saya adalah lulusan <strong>S1 Program Studi Teknologi Informasi dari Universitas Nias (2022–2026)</strong> dengan perolehan Indeks Prestasi Kumulatif <strong>3.69 / 4.00</strong> dan menyandang gelar <strong>Sarjana Komputer (S.Kom.)</strong>. Sepanjang masa studi, saya mendedikasikan fokus pembelajaran pada rekayasa perangkat lunak berbasis web, pemodelan basis data relasional, dan integrasi modul sistem informasi.
+            </p>
+            <p class="about-paragraph">
+              Ketertarikan saya berpusat pada perancangan aplikasi yang terstruktur, rapi, dan memberikan solusi operasional yang terukur. Saya mengutamakan kode program yang mudah dibaca dan dipelihara (*clean code*), didukung dengan dokumentasi teknis sistem dan panduan pengguna yang sistematis agar setiap sistem yang dibangun dapat dioperasikan secara berkelanjutan.
+            </p>
+            <p class="about-paragraph">
+              Melalui pengalaman magang di lingkungan institusi pelayanan publik seperti RS Thomsen Nias serta kepemimpinan organisasi kemasyarakatan, saya terbiasa berkoordinasi dalam tim multidisiplin, mendengarkan kebutuhan pengguna, serta menyelesaikan kendala secara terukur melalui komunikasi dan musyawarah.
+            </p>
+          </div>
+
+          <!-- Highlight Metrik Pendidikan & Keahlian -->
+          <div class="about-highlights-grid">
+            <div class="highlight-card">
+              <span class="highlight-label">Jenjang Pendidikan</span>
+              <span class="highlight-value">S1 Teknologi Informasi</span>
+              <span class="highlight-sub">Universitas Nias (2022–2026)</span>
+            </div>
+
+            <div class="highlight-card">
+              <span class="highlight-label">Prestasi Akademik</span>
+              <span class="highlight-value">IPK 3.69 / 4.00</span>
+              <span class="highlight-sub">Gelar Sarjana Komputer (S.Kom.)</span>
+            </div>
+
+            <div class="highlight-card">
+              <span class="highlight-label">Domisili &amp; Kesiapan</span>
+              <span class="highlight-value">Gunungsitoli, Sumut</span>
+              <span class="highlight-sub">Terbuka untuk Kerja On-site / Remote</span>
+            </div>
+
+            <div class="highlight-card">
+              <span class="highlight-label">Fokus Pengembangan</span>
+              <span class="highlight-value">Sistem Informasi &amp; Web</span>
+              <span class="highlight-sub">Analisis Kebutuhan &amp; Full-Stack</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- --------------------------------------------------------------------
+         3. SKILLS SECTION
+         -------------------------------------------------------------------- -->
+    <section id="skills" class="section skills-section" aria-label="Keahlian Teknis">
+      <div class="container">
+        
+        <header class="section-header">
+          <div class="section-kicker">Kemampuan Teknis</div>
+          <h2 class="section-title">Keahlian &amp; Ekosistem Perangkat Lunak</h2>
+          <p class="section-desc">Pengelompokan kompetensi teknis, basis data, lingkungan kerja, serta produktivitas administrasi dan dokumentasi sistem.</p>
+        </header>
+
+        <div class="skills-grid">
+          
+          <!-- Kategori 1: Programming & Development -->
+          <div class="skill-category-card">
+            <div class="skill-category-header">
+              <div class="skill-category-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="16 18 22 12 16 6"/>
+                  <polyline points="8 6 2 12 8 18"/>
+                </svg>
+              </div>
+              <h3 class="skill-category-title">Programming &amp; Development</h3>
+            </div>
+            <div class="skill-chips-group">
+              <span class="skill-chip">PHP</span>
+              <span class="skill-chip">Laravel</span>
+              <span class="skill-chip">CodeIgniter 3</span>
+              <span class="skill-chip">Java</span>
+              <span class="skill-chip">JavaScript</span>
+              <span class="skill-chip">Vue.js</span>
+              <span class="skill-chip">HTML5</span>
+              <span class="skill-chip">CSS3</span>
+              <span class="skill-chip">Bootstrap</span>
+            </div>
+          </div>
+
+          <!-- Kategori 2: Database -->
+          <div class="skill-category-card">
+            <div class="skill-category-header">
+              <div class="skill-category-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <ellipse cx="12" cy="5" rx="9" ry="3"/>
+                  <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/>
+                  <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/>
+                </svg>
+              </div>
+              <h3 class="skill-category-title">Database</h3>
+            </div>
+            <div class="skill-chips-group">
+              <span class="skill-chip">MySQL</span>
+              <span class="skill-chip">Relational Database Design</span>
+              <span class="skill-chip">Normalisasi Tabel</span>
+              <span class="skill-chip">Query Optimization</span>
+              <span class="skill-chip">Integrasi CRUD</span>
+            </div>
+          </div>
+
+          <!-- Kategori 3: Tools & Environment -->
+          <div class="skill-category-card">
+            <div class="skill-category-header">
+              <div class="skill-category-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+                </svg>
+              </div>
+              <h3 class="skill-category-title">Tools &amp; Environment</h3>
+            </div>
+            <div class="skill-chips-group">
+              <span class="skill-chip">VS Code</span>
+              <span class="skill-chip">Git</span>
+              <span class="skill-chip">GitHub</span>
+              <span class="skill-chip">Laragon</span>
+              <span class="skill-chip">XAMPP</span>
+              <span class="skill-chip">Navicat</span>
+            </div>
+          </div>
+
+          <!-- Kategori 4: Productivity & Documentation -->
+          <div class="skill-category-card">
+            <div class="skill-category-header">
+              <div class="skill-category-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                  <polyline points="14 2 14 8 20 8"/>
+                  <line x1="16" y1="13" x2="8" y2="13"/>
+                  <line x1="16" y1="17" x2="8" y2="17"/>
+                  <polyline points="10 9 9 9 8 9"/>
+                </svg>
+              </div>
+              <h3 class="skill-category-title">Productivity &amp; Documentation</h3>
+            </div>
+            <div class="skill-chips-group">
+              <span class="skill-chip">Microsoft Word</span>
+              <span class="skill-chip">Microsoft Excel</span>
+              <span class="skill-chip">Microsoft PowerPoint</span>
+              <span class="skill-chip">Google Workspace</span>
+              <span class="skill-chip">Penyusunan User Manual</span>
+              <span class="skill-chip">Dokumentasi Teknis SIMRS</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- --------------------------------------------------------------------
+         4. EXPERIENCE SECTION
+         -------------------------------------------------------------------- -->
+    <section id="experience" class="section experience-section" aria-label="Pengalaman">
+      <div class="container">
+        
+        <header class="section-header">
+          <div class="section-kicker">Pengalaman Kerja &amp; Organisasi</div>
+          <h2 class="section-title">Riwayat Profesional &amp; Kepemimpinan</h2>
+          <p class="section-desc">Pengalaman nyata dalam pengembangan sistem institusional serta kepemimpinan organisasi berbasis kerja sama tim.</p>
+        </header>
+
+        <div class="timeline">
+          
+          <!-- Experience 1: Magang RS Thomsen Nias -->
+          <article class="timeline-item">
+            <span class="timeline-marker" aria-hidden="true"></span>
+            <div class="timeline-card">
+              <header class="timeline-header">
+                <h3 class="timeline-role">Peserta Magang – Pengembangan Sistem Informasi</h3>
+                <div class="timeline-company-row">
+                  <span class="timeline-company">RS Thomsen Nias</span>
+                  <span class="badge badge-subtle">Sistem Informasi Institusional</span>
+                  <span class="timeline-period">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                      <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                      <line x1="16" y1="2" x2="16" y2="6"/>
+                      <line x1="8" y1="2" x2="8" y2="6"/>
+                      <line x1="3" y1="10" x2="21" y2="10"/>
+                    </svg>
+                    Maret 2025 – Juni 2025
+                  </span>
+                </div>
+              </header>
+
+              <ul class="timeline-list">
+                <li class="timeline-point">
+                  Terlibat aktif dalam pengembangan aplikasi desktop pengarsipan surat menggunakan <strong>Java</strong> bernama <strong>8Core-Agenda</strong>, mencakup perancangan struktur agenda arsip dan pencatatan riwayat surat.
+                </li>
+                <li class="timeline-point">
+                  Menyusun <strong>dokumentasi spesifikasi sistem</strong> teknis serta menyusun <strong>buku panduan pengguna (*user manual*)</strong> terstruktur untuk mempermudah operasional staf di rumah sakit.
+                </li>
+                <li class="timeline-point">
+                  Berkontribusi dalam proses <strong>perencanaan awal sistem kasir berbasis web</strong> dan perumusan alur operasional data.
+                </li>
+                <li class="timeline-point">
+                  Melakukan <strong>pendokumentasian modul Sistem Informasi Manajemen Rumah Sakit (SIMRS)</strong> untuk kebutuhan evaluasi alur kerja administrasi medis.
+                </li>
+                <li class="timeline-point">
+                  Merancang dan mengelola <strong>website dokumentasi tim menggunakan Google Sites</strong> sebagai wadah sentral penyimpanan laporan progres dan dokumentasi kerja bersama tim.
+                </li>
+              </ul>
+
+              <!-- Catatan Kredibilitas & Ruang Lingkup -->
+              <div class="timeline-disclosure">
+                <strong>Catatan Kolaborasi:</strong> Pengalaman ini dilaksanakan melalui kerja sama tim teknis beranggotakan 7 orang. Keterlibatan mencakup kontribusi aktif pada modul-modul di atas dan dokumentasi pendukung tanpa klaim peran Project Manager formal atau pengerjaan aplikasi mandiri secara keseluruhan.
+              </div>
+            </div>
+          </article>
+
+          <!-- Experience 2: Remaja Masjid -->
+          <article class="timeline-item">
+            <span class="timeline-marker" aria-hidden="true"></span>
+            <div class="timeline-card">
+              <header class="timeline-header">
+                <h3 class="timeline-role">Ketua Organisasi</h3>
+                <div class="timeline-company-row">
+                  <span class="timeline-company">Organisasi Remaja Masjid</span>
+                  <span class="badge badge-subtle">Kepemimpinan Sosial &amp; Organisasi</span>
+                  <span class="timeline-period">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                      <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                      <line x1="16" y1="2" x2="16" y2="6"/>
+                      <line x1="8" y1="2" x2="8" y2="6"/>
+                      <line x1="3" y1="10" x2="21" y2="10"/>
+                    </svg>
+                    2025 – Sekarang
+                  </span>
+                </div>
+              </header>
+
+              <ul class="timeline-list">
+                <li class="timeline-point">
+                  Memimpin koordinasi keseluruhan program kerja organisasi, menyusun timeline kegiatan, dan mengoordinasikan pembagian tugas kepanitiaan.
+                </li>
+                <li class="timeline-point">
+                  Membangun komunikasi formal yang efektif dengan Badan Kemakmuran Masjid (BKM) serta menjalin relasi koordinatif dengan pihak eksternal dan masyarakat sekitar.
+                </li>
+                <li class="timeline-point">
+                  Mengelola administrasi persuratan, tata kelola arsip kegiatan, dan dokumentasi pertanggungjawaban program organisasi secara rapi.
+                </li>
+                <li class="timeline-point">
+                  Menyelesaikan perbedaan sudut pandang dalam tim secara konstruktif melalui pendekatan komunikasi personal, musyawarah, dan pengambilan keputusan berbasis konsensus.
+                </li>
+              </ul>
+
+              <div class="timeline-disclosure">
+                <strong>Fokus Manajerial:</strong> Mengembangkan kapasitas kepemimpinan, komunikasi interpersonal, negosiasi, dan akuntabilitas manajemen tim kerja.
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- --------------------------------------------------------------------
+         5. PROJECTS SECTION
+         -------------------------------------------------------------------- -->
+    <section id="projects" class="section projects-section" aria-label="Portofolio Proyek">
+      <div class="container">
+        
+        <header class="section-header">
+          <div class="section-kicker">Portofolio Proyek</div>
+          <h2 class="section-title">Aplikasi &amp; Implementasi Perangkat Lunak</h2>
+          <p class="section-desc">Karya nyata yang dibangun dengan akurasi fungsional, analisis kebutuhan, dan penjelasan metodologi yang transparan.</p>
+        </header>
+
+        <div class="projects-stack">
+          
+          <!-- Proyek 1: SIAP-TERNAK -->
+          <article class="project-card">
+            <div class="project-layout">
+              <div class="project-preview">
+                <img src="assets/images/projects/siap-ternak.svg" alt="Tampilan antarmuka dashboard analitik cerdas SIAP-TERNAK" class="project-preview-img" width="560" height="350" loading="lazy">
+              </div>
+
+              <div class="project-content">
+                <div>
+                  <div class="project-meta-top">
+                    <span class="badge badge-subtle">Web Application</span>
+                    <span class="badge badge-success">Pengembangan Mandiri</span>
+                  </div>
+
+                  <h3 class="project-title">SIAP-TERNAK – Sistem Prediksi Ternak Ayam Berbasis Analitik Cerdas</h3>
+                  
+                  <p class="project-desc">
+                    Aplikasi berbasis web yang dirancang secara mandiri untuk membantu pengelolaan siklus peternakan ayam melalui pemodelan analitik data pakan, bobot, dan estimasi keuntungan atau kerugian secara terstruktur.
+                  </p>
+
+                  <div class="project-feature-list">
+                    <div class="project-feature-item">
+                      <strong>Kontribusi Penuh Mandiri:</strong> Melakukan analisis kebutuhan, perancangan skema database relasional MySQL, perancangan antarmuka pengguna (UI/UX), serta penulisan kode frontend dan backend secara utuh.
+                    </div>
+                    <div class="project-feature-item">
+                      <strong>Formula Analitik &amp; Prediksi:</strong> Mengimplementasikan metode <em>Linear Regression</em> dan <em>Moving Average</em> untuk proyeksi bobot ternak dan estimasi finansial siklus pemeliharaan.
+                    </div>
+                    <div class="project-feature-item">
+                      <strong>Evaluasi Akurasi &amp; Early Warning:</strong> Menerapkan evaluasi galat <em>MAPE (Mean Absolute Percentage Error)</em> dan modul indikator dini (*early warning*) saat rasio konsumsi pakan tidak proporsional.
+                    </div>
+                  </div>
+
+                  <!-- Transparansi Metodologi & Validasi Data -->
+                  <div class="project-notice-box">
+                    <div class="project-notice-title">Keterbukaan Data Validasi:</div>
+                    <p class="project-notice-text">
+                      Pengujian formula prediksi diuji menggunakan dataset simulasi matematis untuk mengevaluasi presisi kalkulasi algoritma. Sistem ini merupakan karya akademik/portofolio mandiri dan tidak diklaim telah diterapkan pada operasional lapangan aktual BUMDes.
+                    </p>
+                  </div>
+                </div>
+
+                <div>
+                  <div class="project-tech-stack">
+                    <span class="tech-tag">Laravel</span>
+                    <span class="tech-tag">PHP</span>
+                    <span class="tech-tag">MySQL</span>
+                    <span class="tech-tag">Vue.js</span>
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">Bootstrap</span>
+                    <span class="tech-tag">HTML5/CSS3</span>
+                  </div>
+
+                  <div class="project-actions">
+                    <a href="#contact" class="btn btn-secondary btn-sm" data-placeholder="true" data-placeholder-message="Demo aplikasi SIAP-TERNAK menggunakan data simulasi. Silakan hubungi via kontak untuk demonstrasi teknis atau source repository.">
+                      <svg class="btn-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                        <circle cx="10" cy="10" r="7"/>
+                        <path d="M10 6v4l2.5 2.5" stroke-linecap="round"/>
+                      </svg>
+                      <span>Lihat Detail Demo</span>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary btn-sm" data-placeholder="true" data-placeholder-message="Tautan repositori GitHub saat ini berupa placeholder. Anda dapat memperbaruinya di index.html.">
+                      <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                      </svg>
+                      <span>Repository (Placeholder)</span>
+                    </a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </article>
+
+          <!-- Proyek 2: 8Core-Agenda -->
+          <article class="project-card">
+            <div class="project-layout">
+              <div class="project-preview">
+                <img src="assets/images/projects/8core-agenda.svg" alt="Tampilan antarmuka desktop aplikasi pengarsipan surat 8Core-Agenda" class="project-preview-img" width="560" height="350" loading="lazy">
+              </div>
+
+              <div class="project-content">
+                <div>
+                  <div class="project-meta-top">
+                    <span class="badge badge-subtle">Desktop Application</span>
+                    <span class="badge badge-subtle">Proyek Tim Magang RS Thomsen Nias</span>
+                  </div>
+
+                  <h3 class="project-title">8Core-Agenda – Aplikasi Desktop Pengarsipan Surat</h3>
+                  
+                  <p class="project-desc">
+                    Aplikasi desktop yang dibangun untuk memodernisasi tata kelola administrasi surat masuk dan surat keluar di lingkungan rumah sakit, menggantikan sistem pencatatan buku agenda fisik.
+                  </p>
+
+                  <div class="project-feature-list">
+                    <div class="project-feature-item">
+                      <strong>Fitur Pengarsipan:</strong> Penomoran otomatis agenda surat masuk dan keluar, pengelompokan klasifikasi surat, pencarian disposisi cepat, dan cetak rekapitulasi data arsip.
+                    </div>
+                    <div class="project-feature-item">
+                      <strong>Kontribusi Tim &amp; Teknis:</strong> Mengembangkan antarmuka modul agenda menggunakan Java, integrasi penyimpanan basis data lokal MySQL, serta pengujian fungsionalitas form.
+                    </div>
+                    <div class="project-feature-item">
+                      <strong>Dokumentasi Komprehensif:</strong> Menyusun dokumen spesifikasi teknis sistem dan buku panduan pengguna (*user manual*) guna memudahkan staf non-teknis.
+                    </div>
+                  </div>
+
+                  <div class="project-notice-box">
+                    <div class="project-notice-title">Konteks Proyek:</div>
+                    <p class="project-notice-text">
+                      Dikembangkan selama kegiatan magang di RS Thomsen Nias (Maret–Juni 2025) secara terkolaborasi bersama tim magang (7 orang) untuk memenuhi kebutuhan administrasi kearsipan institusi.
+                    </p>
+                  </div>
+                </div>
+
+                <div>
+                  <div class="project-tech-stack">
+                    <span class="tech-tag">Java</span>
+                    <span class="tech-tag">Desktop UI / Swing</span>
+                    <span class="tech-tag">MySQL</span>
+                    <span class="tech-tag">System Documentation</span>
+                    <span class="tech-tag">User Manual Guide</span>
+                  </div>
+
+                  <div class="project-actions">
+                    <a href="#contact" class="btn btn-secondary btn-sm" data-placeholder="true" data-placeholder-message="Dokumen panduan pengguna (*user manual*) 8Core-Agenda merupakan arsip kegiatan magang. Silakan hubungi via email untuk informasi lebih lanjut.">
+                      <svg class="btn-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                        <path d="M4 4h12v12H4zM8 2v4M12 2v4M2 8h16" stroke-linecap="round"/>
+                      </svg>
+                      <span>Dokumentasi Sistem</span>
+                    </a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- --------------------------------------------------------------------
+         6. CONTACT SECTION
+         -------------------------------------------------------------------- -->
+    <section id="contact" class="section contact-section" aria-label="Kontak">
+      <div class="container">
+        
+        <header class="section-header">
+          <div class="section-kicker">Kontak</div>
+          <h2 class="section-title">Informasi Kontak &amp; Tautan Profesional</h2>
+          <p class="section-desc">Terbuka untuk diskusi kesempatan kerja, kolaborasi teknis, maupun pertanyaan mengenai proyek dan pengalaman.</p>
+        </header>
+
+        <div class="contact-grid">
+          
+          <!-- Informasi Kontak Utama -->
+          <div class="contact-info-card">
+            <div>
+              <div class="contact-info-header">
+                <h3 class="contact-info-title">Mari Terhubung</h3>
+                <p class="contact-info-desc">
+                  Jangan ragu untuk menghubungi saya melalui saluran kontak berikut. Seluruh informasi di bawah ini siap diperbarui dan dihubungi secara langsung.
+                </p>
+              </div>
+
+              <div class="contact-methods-list">
+                
+                <!-- Lokasi -->
+                <div class="contact-method-item">
+                  <div class="contact-method-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+                      <circle cx="12" cy="9" r="2.5"/>
+                    </svg>
+                  </div>
+                  <div class="contact-method-body">
+                    <span class="contact-method-label">Domisili Saat Ini</span>
+                    <span class="contact-method-value">Gunungsitoli, Sumatera Utara, Indonesia</span>
+                  </div>
+                </div>
+
+                <!-- Email Placeholder -->
+                <div class="contact-method-item">
+                  <div class="contact-method-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                      <polyline points="22,6 12,13 2,6"/>
+                    </svg>
+                  </div>
+                  <div class="contact-method-body">
+                    <span class="contact-method-label">Email (Placeholder)</span>
+                    <a href="mailto:abdulmajidt20b@gmail.com" class="contact-method-value">abdulmajidt20b@gmail.com</a>
+                  </div>
+                </div>
+
+                <!-- Telepon / WhatsApp Placeholder -->
+                <div class="contact-method-item">
+                  <div class="contact-method-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                    </svg>
+                  </div>
+                  <div class="contact-method-body">
+                    <span class="contact-method-label">Telepon / WhatsApp (Placeholder)</span>
+                    <a href="tel:+6281234567890" class="contact-method-value">+62 823-6852-5759</a>
+                  </div>
+                </div>
+
+                <!-- LinkedIn Placeholder -->
+                <!-- <div class="contact-method-item">
+                  <div class="contact-method-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                      <rect x="2" y="9" width="4" height="12"/>
+                      <circle cx="4" cy="4" r="2"/>
+                    </svg>
+                  </div>
+                  <div class="contact-method-body">
+                    <span class="contact-method-label">LinkedIn (Placeholder)</span>
+                    <a href="https://linkedin.com/in/lyuu-eloqi-placeholder" target="_blank" rel="noopener noreferrer" class="contact-method-value">linkedin.com/in/lyuu-eloqi</a>
+                  </div>
+                </div> -->
+
+                <!-- GitHub Placeholder -->
+                <!-- <div class="contact-method-item">
+                  <div class="contact-method-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                    </svg>
+                  </div>
+                  <div class="contact-method-body">
+                    <span class="contact-method-label">GitHub (Placeholder)</span>
+                    <a href="https://github.com/lyuu-eloqi-placeholder" target="_blank" rel="noopener noreferrer" class="contact-method-value">github.com/lyuu-eloqi</a>
+                  </div>
+                </div> -->
+
+              </div>
+            </div>
+
+            <!-- Download CV Block -->
+            <div class="contact-cta-card">
+              <div class="contact-cta-title">Curriculum Vitae (PDF)</div>
+              <p class="contact-cta-desc">
+                Tinjau dokumen riwayat hidup langsung pada layar Anda sebelum mengunduh atau simpan langsung berkas resmi PDF.
+              </p>
+              <div style="display: flex; flex-wrap: wrap; gap: var(--space-2);">
+                <button type="button" class="btn btn-primary btn-sm btn-preview-cv" aria-haspopup="dialog">
+                  <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                    <circle cx="12" cy="12" r="3"/>
+                  </svg>
+                  <span>Pratinjau CV</span>
+                </button>
+                <a href="assets/documents/cv_resmi.pdf" class="btn btn-secondary btn-sm" download="CV_Lyuu_Eloqi.pdf">
+                  <svg class="btn-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                    <path d="M3 13v3a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-3M7 9l3 3m0 0 3-3m-3 3V3" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <span>Unduh PDF</span>
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Quick Email Action Card -->
+          <div class="contact-info-card" style="justify-content: center; align-items: center; text-align: center;">
+            <div style="max-width: 440px;">
+              <div class="contact-method-icon" style="margin: 0 auto var(--space-4); width: 56px; height: 56px;" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width: 28px; height: 28px;">
+                  <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                </svg>
+              </div>
+              <h3 class="contact-info-title" style="margin-bottom: var(--space-2);">Kirim Pesan Langsung</h3>
+              <p class="contact-info-desc" style="margin-bottom: var(--space-6);">
+                Anda dapat memulai percakapan atau mengirimkan penawaran kerja sama secara langsung melalui aplikasi email bawaan perangkat Anda.
+              </p>
+              <a href="mailto:abdulmajidt20b@gmail.com?subject=Tawaran%20Kerja%20/%20Diskusi%20Portofolio%20-%20Abdul%20Majid%20Tanjung" class="btn btn-primary" style="width: 100%; margin-bottom: var(--space-3);">
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                  <polyline points="22,6 12,13 2,6"/>
+                </svg>
+                <span>Kirim Email ke Abdul Majid Tanjung</span>
+              </a>
+              <span style="font-size: 11px; color: var(--color-text-muted);">Format subjek terisi otomatis untuk kenyamanan Anda.</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ======================================================================
+       FOOTER
+       ====================================================================== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-container">
+      <div class="footer-copy">
+        <p><strong>Lyuu Eloqi, S.Kom.</strong> — Information Technology Graduate | Web Developer</p>
+        <p>Gunungsitoli, Sumatera Utara, Indonesia. Hak Cipta &copy; 2026. Dibangun dengan standar HTML5, CSS3, &amp; Vanilla JavaScript.</p>
+      </div>
+      
+      <div class="footer-actions">
+        <button type="button" class="back-to-top-btn" aria-label="Kembali ke bagian atas halaman">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <line x1="12" y1="19" x2="12" y2="5"/>
+            <polyline points="5 12 12 5 19 12"/>
+          </svg>
+          <span>Ke Atas</span>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ======================================================================
+       MODAL PRATINJAU CV PDF
+       ====================================================================== -->
+  <div id="cv-preview-modal" class="cv-modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="cv-modal-title" aria-hidden="true">
+    <div class="cv-modal-container">
+      
+      <!-- Modal Header -->
+      <header class="cv-modal-header">
+        <div class="cv-modal-title-group">
+          <div class="cv-modal-badge">
+            <span class="status-dot" aria-hidden="true"></span>
+            <span>Dokumen Resmi</span>
+          </div>
+          <h3 id="cv-modal-title" class="cv-modal-title">Curriculum Vitae — Lyuu Eloqi, S.Kom.</h3>
+          <p class="cv-modal-subtitle">Information Technology Graduate | Web Developer</p>
+        </div>
+
+        <div class="cv-modal-actions">
+          <a href="assets/documents/cv_resmi.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" title="Buka berkas di tab baru">
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+              <polyline points="15 3 21 3 21 9"/>
+              <line x1="10" y1="14" x2="21" y2="3"/>
+            </svg>
+            <span class="modal-btn-text">Tab Baru</span>
+          </a>
+          <a href="assets/documents/cv_resmi.pdf" class="btn btn-primary btn-sm" download="CV_Lyuu_Eloqi.pdf" title="Unduh berkas PDF ke perangkat">
+            <svg class="btn-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+              <path d="M3 13v3a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-3M7 9l3 3m0 0 3-3m-3 3V3" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span>Unduh PDF</span>
+          </a>
+          <button type="button" class="cv-modal-close-btn" aria-label="Tutup pratinjau CV">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <line x1="18" y1="6" x2="6" y2="18"/>
+              <line x1="6" y1="6" x2="18" y2="18"/>
+            </svg>
+          </button>
+        </div>
+      </header>
+
+      <!-- Modal Body (PDF Viewer) -->
+      <div class="cv-modal-body">
+        <iframe id="cv-pdf-frame" class="cv-pdf-iframe" title="Pratinjau Curriculum Vitae Lyuu Eloqi" src="" loading="lazy"></iframe>
+
+        <!-- Fallback Bar jika browser perangkat tidak merender PDF dalam frame -->
+        <div class="cv-fallback-notice">
+          <span>Mengalami kendala pratinjau? Buka langsung atau unduh berkas ke perangkat Anda:</span>
+          <div class="cv-fallback-actions">
+            <a href="assets/documents/cv_resmi.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">Buka di Tab Baru</a>
+            <a href="assets/documents/cv_resmi.pdf" class="btn btn-primary btn-sm" download="CV_Lyuu_Eloqi.pdf">Unduh PDF</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Toast Notification untuk Placeholder Interaktif -->
+  <div class="toast-container" aria-live="polite">
+    <div class="toast" role="status"></div>
+  </div>
+
+  <!-- JavaScript Berkas Terpisah -->
+  <script src="assets/js/script.js" defer></script>
+</body>
+</html>

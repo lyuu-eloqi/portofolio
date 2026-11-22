@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EEF2F6" />
+      <stop offset="100%" stop-color="#E5E9EF" />
+    </linearGradient>
+    <linearGradient id="avatarGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#526B82" />
+      <stop offset="100%" stop-color="#3D5266" />
+    </linearGradient>
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#202938" flood-opacity="0.06"/>
+    </filter>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="400" height="400" rx="28" fill="url(#bgGradient)"/>
+  
+  <!-- Subtle decorative grid -->
+  <g opacity="0.35" stroke="#526B82" stroke-width="1" stroke-dasharray="3,3">
+    <line x1="80" y1="40" x2="80" y2="360" />
+    <line x1="320" y1="40" x2="320" y2="360" />
+    <line x1="40" y1="120" x2="360" y2="120" />
+    <line x1="40" y1="280" x2="360" y2="280" />
+  </g>
+
+  <!-- Center Card Shadow -->
+  <rect x="70" y="50" width="260" height="300" rx="20" fill="#FFFFFF" filter="url(#softGlow)" stroke="#E5E9EF" stroke-width="1.5"/>
+
+  <!-- Developer Silhouette / Initials Emblem -->
+  <circle cx="200" cy="155" r="54" fill="url(#avatarGrad)"/>
+  
+  <!-- Head shape -->
+  <circle cx="200" cy="140" r="26" fill="#F7F8FA"/>
+  
+  <!-- Shoulder shape -->
+  <path d="M162 195 C162 172 178 166 200 166 C222 166 238 172 238 195 Z" fill="#F7F8FA"/>
+
+  <!-- Code/Tech Badge Tag -->
+  <g transform="translate(110, 235)">
+    <rect x="-18" width="214" height="35" rx="8" fill="#EEF2F6" stroke="#E5E9EF" stroke-width="1"/>
+    <text x="90" y="22" font-family="'Poppins', sans-serif" font-size="12" font-weight="600" fill="#526B82" text-anchor="middle" letter-spacing="1">Abdul Majid Tanjung, S.Kom.</text>
+  </g>
+
+  <!-- Subtitle Tag -->
+  <g transform="translate(120, 278)">
+    <text x="80" y="16" font-family="'Poppins', sans-serif" font-size="11" font-weight="400" fill="#687386" text-anchor="middle">Information Technology</text>
+    <text x="80" y="32" font-family="'Poppins', sans-serif" font-size="10" font-weight="500" fill="#526B82" text-anchor="middle">Universitas Nias</text>
+  </g>
+
+  <!-- Corner accent marks -->
+  <circle cx="95" cy="75" r="3.5" fill="#526B82" opacity="0.6"/>
+  <circle cx="305" cy="75" r="3.5" fill="#526B82" opacity="0.6"/>
+  <circle cx="95" cy="325" r="3.5" fill="#526B82" opacity="0.6"/>
+  <circle cx="305" cy="325" r="3.5" fill="#526B82" opacity="0.6"/>
+</svg>
